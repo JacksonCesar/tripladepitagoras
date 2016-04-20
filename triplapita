@@ -1,0 +1,54 @@
+// Autor: Jackson 
+// Programa Tripla de pitagoras
+//
+
+
+// importa a classe Scanner
+import java.util.Scanner;
+
+public class pita{
+   public static void main (String arg[]){
+	   
+      //Declaração de variaveis
+	  
+	  int a, b, c, a2, b2, c2;
+	  boolean d = false;
+      
+      // Instanciar e declarar um objeto Scanner
+	  Scanner ler = new Scanner(System.in);
+	    
+	  
+	  System.out.print("Digite o valor de A:");
+	  a = ler.nextInt();
+	  
+	  System.out.print("Digite o valor de B:");
+	  b= ler.nextInt();
+
+	  System.out.print("Digite o valor de C:");
+	  c = ler.nextInt();
+
+      a2 = a*a;
+	  b2 = b*b;
+	  c2 = c*c;
+	  
+	 if ( a2 = b2 + c2 ){
+		  d = true;
+	 }
+	  
+	 if ( b2 = a2 + c2 ){
+		 d = true;
+	 }
+	 
+	 if ( c2 = a2 + b2 ){
+		 d = true;
+	 }
+	  
+	  
+	 if (d == true){
+		 System.out.print("E uma tripla de pitagoras!!!");
+	  }else{
+		 System.out.print("Nao e uma tripla de pitagoras");
+	  }
+	       
+   }
+}
